@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ProКод</title>
+    <meta name="description" content="Спраачная система для начинающих программистов С/С++">
+    <meta name="keywords" content="программирование, С++, С,
+    спраочник С++, Первый курс программирование, Условный оператор, if">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+<div class="main">
+    <div class="header_sec">
+        <div class="logo">
+            <div class="logo_text">
+                <h1><a href="/">ProКод | Условный оператор </a></h1>
+            </div>
+        </div>
+        <div class="menu_bar">
+            <ul class="menu">
+                <li><a href="file:///Users/maxkuzinov/Desktop/ProCod/First.html#">главная</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-content">
+        <h1>Условный оператор - if</h1>
+
+    <p>
+        Оператор <b>if</b> служит для того, чтобы выполнить какую-либо операцию в том случае, когда условие является верным.
+        Условная конструкция в С++ всегда записывается в круглых скобках после оператора <b>if</b>. По-английски «если» звучит
+        как <b>“if”</b>, а «иначе» как <b>“else”</b>.
+    </p>
+    <p>
+        Внутри фигурных скобок указывается тело условия. Если условие выполнится, то начнется выполнение всех команд,
+        которые находятся между фигурными скобками.
+    </p>
+
+        <div class="Code_in_CodePro">
+    <code>
+        <pre>
+        if (num < 10) {
+        cout &lt;&lt; "Это число меньше 10." &lt;&lt; endl;
+        }
+        else {
+        cout &lt;&lt;"Это число больше либо равно 10." &lt;&lt; endl;
+        }
+            </pre>
+    </code>
+        </div>
+        <p>
+            if (num < 10){ &emsp;&emsp; Если (Число < 10){ <br>
+            }&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;} <br>
+            cout &lt;&lt; "Это число меньше 10." &lt;&lt; endl;<br>
+            }else{ &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; }иначе делаем{<br>
+            cout &lt;&lt;"Это число больше либо равно 10." &lt;&lt; endl;<br>
+            }<br>
+        </p>
+        <p>
+            Каждому оператору <b>if</b> соответствует только один оператор <b>else</b>. Совокупность этих операторов — <b>else if</b> означает,
+            что если не выполнилось предыдущее условие, то проверить данное. Если ни одно из условий не верно, то выполняется
+            тело оператора <b>else</b>.
+        </p>
+        <p>
+            Если после оператора <b>if</b>, <b>else</b> или их связки <b>else if</b> должна выполняться только одна команда, то фигурные скобки можно не ставить
+        </p>
+        <h2>Вроде ничего сложного приступим к практике</h2>
+        <h3>Задача 1</h3>
+        <p>
+            Даны два целых числа. Программа должна вывести единицу, если первое число больше второго, двойку, если второе больше первого, или ноль, если они равны.
+        </p>
+        <img width="20%" height="20%" src="assets/img/if1.png" alt="каринка топ">
+        <div class="Code_in_CodePro">
+            <code>
+        <pre>
+ #include &lt;iostream&gt;
+ using namespace std;
+            int main() {
+   int num1, num2;
+    cin >> num1 >> num2;
+    if (num1 > num2){
+          cout<<"1";
+    }
+    else if (num1 < num2){
+         cout << "2";
+    }
+    else {
+         cout << "0";
+    }
+  return 0;
+    }
+            </pre>
+            </code>
+        </div>
+        <h4>Теория - else if</h4>
+        <p>
+            Условие <b>if</b> может иметь несколько блоков <b>else if</b> (в противном случае, если). Они используются, если нужны дополнительные условия:
+        </p>
+        <h3>Задача 2</h3>
+        <p>
+            Даны три целых числа. Определите, сколько среди них совпадающих. Программа должна вывести одно из чисел: 3 (если все совпадают), 2 (если два совпадает) или 0 (если все числа различны).
+        </p>
+        <div class="Code_in_CodePro">
+            <code>
+        <pre>
+ #include &lt;iostream&gt;
+ using namespace std;
+            int main() {
+    int num1, num2, num3 ;
+
+    cin >> num1 >> num2 >> num3;
+       if ((num1 == num2)&&(num1 == num3)&&(num2==num3)) {
+           cout << "3";
+       }
+       else if ((num1 != num2)&&(num1 != num3)&&(num2 != num3)){
+           cout << "0";
+       }
+       else {
+           cout << "2";
+       }
+  return 0;
+       }
+            </pre>
+            </code>
+        </div>
+        <h1>Не повреришь, но типо все</h1>
+
+    </div>
+</div>
+<div class="footer">
+    <p>
+        <a href="https://vk.com/theznat7">я тут</a>
+    </p>
+    <p>by Znat.media</p>
+</div>
+<script src="assets/js/First.js"></script>
+
+</body>
+</html>
