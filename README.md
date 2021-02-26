@@ -1,2 +1,2 @@
 # ProCod
-![alt text](https://disk.yandex.ru/i/YupObF09gQHNaw)
+![alt text](https://ibb.co/8DnpbY3)
